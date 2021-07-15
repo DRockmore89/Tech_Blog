@@ -2,38 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tech Blog</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Creative Mind Tech Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<nav class="navbar">
-    <ul class="flex-row">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="./dashboard" class="nav-link">Dashboard</a></li>
-            <li class="nav-item"><a href="#" id="logout-user">Logout</a></li>
-            <!-- <li class=" nav-item"><a class="nav-link" href="#">Resume</a></li> -->
-        </ul>
-    </ul>
-</nav>
-
-
-<header class="hero">
-    <h1 class="your-dashboard"><a href="/dashboard">Your Dashboard</a></h1>
-</header>
-
-<main class="col-auto">
-    {{{body}}}
-</main>
-
-<footer class="footer flex-row justify-center">
-    <a href="/dashboard/new">➕ New Post</a>
-</footer>
+<body class="flex-column p-2 min-100-vh">
+    <nav class="navbar navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="flex-row navbar-nav">
+                <li class="list-inline-item nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="list-inline-item nav-item">
+                    <a class="nav-link" href="/dashboard">Dashboard</a>
+                </li>
+                <li class="list-inline-item nav-item">
+                    <a class="nav-link" id="logout" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <h1 class="title-banner"><a href="/dashboard">Creative Mind Dashboard</a></h1>
+    </header>
+    <main class="col-auto">
+        {{{body}}}
+    </main>
+    <footer class="footer row justify-center">
+        <a href="/dashboard/new">➕ New Post</a>
+    </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 <script src="/js/logout.js"></script>
 
 </html>
