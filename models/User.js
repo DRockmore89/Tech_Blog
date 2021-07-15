@@ -5,11 +5,11 @@ const sequelize = require('../config/connection');
 //create user.
 //activity 23-Ins_Auth-Review models/User.js.
 class User extends Model {
-  //check password
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
-  }
+  // set up method to check password
+  checkPass(loginPW) {
+   return bcrypt.compareSync(loginPW, this.password);
 }
+};
 
 User.init(
   {
@@ -27,12 +27,13 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [2,10]
+        len: [4]
       }
     }
   },
   {
     hooks: {
+      // set up beforeCreate lifecycle "hook" functionality
       beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
