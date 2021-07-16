@@ -11,12 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/DRockmore89/Tech_Blog.git"
   },
-  "keywords": [
-    "expressjs",
-    "mysql",
-    "handlebars",
-    "nodejs"
-  ],
+  
   "author": "Donald Rockmore",
   "license": "ISC",
   "bugs": {
