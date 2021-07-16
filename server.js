@@ -31,7 +31,7 @@ function extendDefaultFields(defaults, session) {
   };
 }
 const sess = {
-  secret: 'MojoRising',
+  secret: 'Lilrock07',
   cookie: {},
   resave: false,
   saveUninitialized: true,
